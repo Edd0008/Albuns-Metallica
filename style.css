@@ -1,0 +1,55 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+/* titulo */
+h1 {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 75px;
+  text-shadow: 0 0 20px red;
+}
+
+.container-de-albuns {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 40px; 
+  justify-content: center;
+}
+
+/* albuns */
+.container-de-albuns a {
+  width: 275px;
+  overflow: auto;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* imagens dos albuns */
+.container-de-albuns img {
+  width: 100%;
+}
+
+
+/* efeito do fundo do album */
+.container-de-albuns a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 50px red;
+}
